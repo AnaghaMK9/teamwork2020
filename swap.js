@@ -26,9 +26,19 @@
 //     console.log(m,n);
 // }swapNumbers(5,8);
 
-function swapNumbers(m,n){
-    m = ~(m ^ n); // 13 => 1101 => 0010
-    n = ~(m ^ n); // 5 => 101 => 010
-    m = ~(m ^ n); // 8 => 1000 => 0001
-    console.log(m,n);
-}swapNumbers(55,8);
+// function swapNumbers(m,n){
+//     m = ~(m ^ n); // 13 => 1101 => 0010
+//     n = ~(m ^ n); // 5 => 101 => 010
+//     m = ~(m ^ n); // 8 => 1000 => 0001
+//     console.log(m,n);
+// }swapNumbers(55,8);
+
+
+function swap(num1, num2) {
+    num1 = ~(num1 ^ num2);   
+    num2 = ~(num1 ^ num2);   
+    num1 = ~(num1 ^ num2);    
+    console.log(num1, num2); 
+
+}
+// swap(3, 5);   // *Uncomment to call swap()*
